@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Digiwin.ERP.FIL_INTEGRATE.Business</RootNamespace>
+    <AssemblyName>Digiwin.ERP.FIL_INTEGRATE.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Digiwin.Mars.Common, Version=1.9.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Torridity, Version=1.9.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Torridity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\IGetDefectiveReasonsService.cs" />
+    <Compile Include="Interface\IGetSalesIssueListService.cs" />
+    <Compile Include="Interface\IGetSalesIssueService.cs" />
+    <Compile Include="Interface\IInsertConsignTransferOutService.cs" />
+    <Compile Include="Interface\IGetSalesOrderListService.cs" />
+    <Compile Include="Interface\IGetSalesOrderService.cs" />
+    <Compile Include="Interface\IGetMOListService.cs" />
+    <Compile Include="Interface\IInsertPoArrivalInspectionService.cs" />
+    <Compile Include="Interface\IGetCompanyService.cs" />
+    <Compile Include="Interface\IGetPurchaseArrivalQcService.cs" />
+    <Compile Include="Interface\ICheckListService.cs" />
+    <Compile Include="Interface\IDeleteFilArrivalService.cs" />
+    <Compile Include="Interface\IGetFilArrivalService.cs" />
+    <Compile Include="Interface\IGetItemBcRecodeService.cs" />
+    <Compile Include="Interface\IGetItemInfoService.cs" />
+    <Compile Include="Interface\IGetPlantService.cs" />
+    <Compile Include="Interface\IGetSupplierInfoService.cs" />
+    <Compile Include="Interface\IInsertFilArrivalService.cs" />
+    <Compile Include="Interface\IInsertItemBcRecodeService.cs" />
+    <Compile Include="Interface\IInsertFILPurchaseArrivalBcodeService.cs" />
+    <Compile Include="Interface\IInsertTransactionDocService.cs" />
+    <Compile Include="Interface\IGetFILPurchaseArrivalBcodeService.cs" />
+    <Compile Include="Interface\IGetFILPurchaseArrivalListService.cs" />
+    <Compile Include="Interface\IInsertFilPurchaseArrivalService.cs" />
+    <Compile Include="Interface\IGetFILPurchaseArrivalService.cs" />
+    <Compile Include="Interface\IGetCountingPlanService.cs" />
+    <Compile Include="Interface\IGetMOReceiptReqListService.cs" />
+    <Compile Include="Interface\IGetIssueReceiptReqListService.cs" />
+    <Compile Include="Interface\IGetPurchaseReturnListService.cs" />
+    <Compile Include="Interface\IGetPurchaseReturnService.cs" />
+    <Compile Include="Interface\IGetSalesReturnListService.cs" />
+    <Compile Include="Interface\IGetSalesReturnService.cs" />
+    <Compile Include="Interface\IGetTransferReqListService.cs" />
+    <Compile Include="Interface\IGetIssueReceiptReqService.cs" />
+    <Compile Include="Interface\IGetMOReceiptReqService.cs" />
+    <Compile Include="Interface\IGetTransferReqService.cs" />
+    <Compile Include="Interface\IGetDocAndBarcodeService.cs" />
+    <Compile Include="Interface\IInsertPurchaseIssueService.cs" />
+    <Compile Include="Interface\IInsertSalesReturnReceiptService.cs" />
+    <Compile Include="Interface\IInstructionsService.cs" />
+    <Compile Include="Interface\IInterfaceConversionNewService.cs" />
+    <Compile Include="Interface\IGetBarcodeNewService.cs" />
+    <Compile Include="Interface\IGetInvQtyService.cs" />
+    <Compile Include="Interface\IInsertTransferInDocService.cs" />
+    <Compile Include="Interface\IGetUserService.cs" />
+    <Compile Include="Interface\IGetUserInventoryService.cs" />
+    <Compile Include="Interface\IListInterfaceConversionService.cs" />
+    <Compile Include="Interface\IInsertMOReceiptService.cs" />
+    <Compile Include="Interface\IInsertPurchaseArrivalService.cs" />
+    <Compile Include="Interface\IGetMoRoutingService.cs" />
+    <Compile Include="Interface\IInsertIssueReceiptService.cs" />
+    <Compile Include="Interface\IInsertPurchaseReceiptService.cs" />
+    <Compile Include="Interface\IInsertSalesIssueService.cs" />
+    <Compile Include="Interface\IInsertTransferDocService.cs" />
+    <Compile Include="Interface\IInsertInterfaceConversionService.cs" />
+    <Compile Include="Interface\IGetItemService.cs" />
+    <Compile Include="Interface\IGetBarcodeService.cs" />
+    <Compile Include="Interface\IGetIssueReceiptListService.cs" />
+    <Compile Include="Interface\IGetIssueReceiptMoService.cs" />
+    <Compile Include="Interface\IGetMOProductMoService.cs" />
+    <Compile Include="Interface\IGetPurchaseArrivalListService.cs" />
+    <Compile Include="Interface\IGetPurchaseArrivalService.cs" />
+    <Compile Include="Interface\IGetTransactionDocListService.cs" />
+    <Compile Include="Interface\IGetTransactionDocService.cs" />
+    <Compile Include="Interface\IGetTransferDocListService.cs" />
+    <Compile Include="Interface\IGetTransferDocService.cs" />
+    <Compile Include="Interface\IInterfaceConversionService.cs" />
+    <Compile Include="Interface\IGetSalesDeliveryListService.cs" />
+    <Compile Include="Interface\IGetPurchaseOrderService.cs" />
+    <Compile Include="Interface\IGetSalesDeliveryService.cs" />
+    <Compile Include="Interface\ILotNoAndSerialNoCodingService.cs" />
+    <Compile Include="Interface\IUpdateCountingPlanService.cs" />
+    <Compile Include="Interface\IUpdateCountingService.cs" />
+    <Compile Include="Interface\IUpdateIssueReceiptService.cs" />
+    <Compile Include="Interface\IUpdateLotService.cs" />
+    <Compile Include="Interface\IUpdateSalesIssueService.cs" />
+    <Compile Include="Interface\IUpdateTransactionDocService.cs" />
+    <Compile Include="Interface\IUpdateMoRoutingService.cs" />
+    <Compile Include="Interface\IUpdateBarCodeFrozenStatusService.cs" />
+    <Compile Include="Interface\IPurchaseOrderUaqtyService.cs" />
+    <Compile Include="Interface\IReturnQtyService.cs" />
+    <Compile Include="Interface\ISalesListService.cs" />
+    <Compile Include="Interface\ISupplierService.cs" />
+    <Compile Include="Interface\IInsertMOReceiptReqService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

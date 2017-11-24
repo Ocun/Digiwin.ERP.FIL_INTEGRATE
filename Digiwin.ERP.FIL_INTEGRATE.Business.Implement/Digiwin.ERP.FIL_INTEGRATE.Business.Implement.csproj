@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E88B9EF-454E-425A-9BA0-C2754D2C34CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Digiwin.ERP.FIL_INTEGRATE.Business.Implement</RootNamespace>
+    <AssemblyName>Digiwin.ERP.FIL_INTEGRATE.Business.Implement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Digiwin.ERP.AI_STANDARD.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.BC_REG.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.Common.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.Common.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.CommonSupplyChain.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.CUSTOM_STANDARD.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.EFNET.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.LotNoAndSerialNoCodingService.Business.Implement, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Digiwin.ERP.PO_ARRIVAL_INSPECTION.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.PO_QC_RESULT.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.ERP.WIP_TRANSFER_DOC.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Application, Version=1.9.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.ApplicationUtils.Common, Version=1.9.0.64, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.ApplicationUtils.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.ApplicationUtils.Service, Version=1.9.0.62, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.ApplicationUtils.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Business, Version=1.9.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Business.Utils, Version=1.9.0.40, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Business.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Common, Version=1.9.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Configuration, Version=1.9.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Core, Version=1.9.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Integration.Business, Version=1.9.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Integration.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Query2, Version=1.9.0.12, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Query2.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Torridity, Version=1.9.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Torridity.dll</HintPath>
+    </Reference>
+    <Reference Include="Digiwin.Mars.Utils, Version=1.9.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Digiwin.Mars.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implement\GetDefectiveReasonsService.cs" />
+    <Compile Include="Implement\GetSalesIssueListService.cs" />
+    <Compile Include="Implement\GetSalesIssueService.cs" />
+    <Compile Include="Implement\GetSalesOrderListService.cs" />
+    <Compile Include="Implement\GetSalesOrderService.cs" />
+    <Compile Include="Implement\GetCompanyService.cs" />
+    <Compile Include="Implement\GetMOListService.cs" />
+    <Compile Include="Implement\GetPurchaseArrivalQcService.cs" />
+    <Compile Include="Implement\CheckListService.cs" />
+    <Compile Include="Implement\DeleteFilArrivalService.cs" />
+    <Compile Include="Entity\ConversionParameter.cs" />
+    <Compile Include="Entity\AsyncResultObject.cs" />
+    <Compile Include="Implement\GetFilArrivalService.cs" />
+    <Compile Include="Implement\GetItemBcRecodeService.cs" />
+    <Compile Include="Implement\GetItemInfoService.cs" />
+    <Compile Include="Implement\GetPlantService.cs" />
+    <Compile Include="Implement\GetSupplierInfoService.cs" />
+    <Compile Include="Implement\GetFILPurchaseArrivalBcodeService.cs" />
+    <Compile Include="Implement\GetFILPurchaseArrivalListService.cs" />
+    <Compile Include="Implement\GetFILPurchaseArrivalService.cs" />
+    <Compile Include="Implement\GetCountingPlanService.cs" />
+    <Compile Include="Implement\GetMOReceiptReqListService.cs" />
+    <Compile Include="Implement\GetIssueReceiptReqListService.cs" />
+    <Compile Include="Implement\GetPurchaseReturnListService.cs" />
+    <Compile Include="Implement\GetPurchaseReturnService.cs" />
+    <Compile Include="Implement\GetSalesReturnListService.cs" />
+    <Compile Include="Implement\GetSalesReturnService.cs" />
+    <Compile Include="Implement\GetTransferReqListService.cs" />
+    <Compile Include="Implement\GetIssueReceiptReqService.cs" />
+    <Compile Include="Implement\GetMOReceiptReqService.cs" />
+    <Compile Include="Implement\GetTransferReqService.cs" />
+    <Compile Include="Implement\GetDocAndBarcodeService.cs" />
+    <Compile Include="Implement\GetBarcodeNewService.cs" />
+    <Compile Include="Implement\GetInvQtyService.cs" />
+    <Compile Include="Implement\GetUserInventoryService.cs" />
+    <Compile Include="Implement\GetUserService.cs" />
+    <Compile Include="Implement\GetMoRoutingService.cs" />
+    <Compile Include="Implement\GetBarcodeService.cs" />
+    <Compile Include="Implement\GetItemServicecs.cs" />
+    <Compile Include="Implement\GetIssueReceiptListService.cs" />
+    <Compile Include="Implement\GetIssueReceiptMoService.cs" />
+    <Compile Include="Implement\GetMOProductMoService.cs" />
+    <Compile Include="Implement\GetPurchaseArrivalListService.cs" />
+    <Compile Include="Implement\GetPurchaseArrivalService.cs" />
+    <Compile Include="Implement\GetTransactionDocListService.cs" />
+    <Compile Include="Implement\GetTransactionDocService.cs" />
+    <Compile Include="Implement\GetTransferDocListService.cs" />
+    <Compile Include="Implement\GetTransferDocService.cs" />
+    <Compile Include="Implement\GetSalesDeliveryListService.cs" />
+    <Compile Include="Implement\GetPurchaseOrderService.cs" />
+    <Compile Include="Implement\GetSalesDeliveryService.cs" />
+    <Compile Include="Implement\InsertPurchaseIssueService.cs" />
+    <Compile Include="Implement\InsertSalesReturnReceiptService.cs" />
+    <Compile Include="Implement\InterfaceConversionService.cs" />
+    <Compile Include="Implement\InsertIssueReceiptService.cs" />
+    <Compile Include="Implement\InsertPurchaseReceiptService.cs" />
+    <Compile Include="Implement\InsertSalesIssueService.cs" />
+    <Compile Include="Implement\InsertTransferDocService.cs" />
+    <Compile Include="Implement\InsertInterfaceConversionService.cs" />
+    <Compile Include="Implement\InsertMOReceiptService.cs" />
+    <Compile Include="Implement\InsertPurchaseArrivalService.cs" />
+    <Compile Include="Implement\ListInterfaceConversionService.cs" />
+    <Compile Include="Implement\InsertTransferInDocService.cs" />
+    <Compile Include="Implement\InterfaceConversionNewService.cs" />
+    <Compile Include="Implement\InstructionsService.cs" />
+    <Compile Include="Implement\LotNoAndSerialNoCodingService.cs" />
+    <Compile Include="Implement\UpdateCountingPlanService.cs" />
+    <Compile Include="Implement\UpdateLotService.cs" />
+    <Compile Include="Implement\InsertFilPurchaseArrivalService.cs" />
+    <Compile Include="Implement\InsertTransactionDocService.cs" />
+    <Compile Include="Implement\InsertFILPurchaseArrivalBcodeService.cs" />
+    <Compile Include="Implement\InsertFilArrivalService.cs" />
+    <Compile Include="Implement\InsertItemBcRecodeService.cs" />
+    <Compile Include="Implement\InsertPoArrivalInspectionService.cs" />
+    <Compile Include="Implement\InsertConsignTransferOutService.cs" />
+    <Compile Include="Implement\InsertMOReceiptReqService.cs" />
+    <Compile Include="Implement\UpdateSalesIssueService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Implement\UpdateCountingService.cs" />
+    <Compile Include="Implement\UpdateIssueReceiptService.cs" />
+    <Compile Include="Implement\UpdateTransactionDocService.cs" />
+    <Compile Include="Implement\UtilsClass.cs" />
+    <Compile Include="Implement\UpdateMoRoutingService.cs" />
+    <Compile Include="Implement\UpdateBarCodeFrozenStatusService.cs" />
+    <Compile Include="Implement\PurchaseOrderUaqtyService.cs" />
+    <Compile Include="Implement\ReturnQtyService.cs" />
+    <Compile Include="Implement\SalesListService.cs" />
+    <Compile Include="Implement\SupplierService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Digiwin.ERP.FIL_INTEGRATE.Business\Digiwin.ERP.FIL_INTEGRATE.Business.csproj">
+      <Project>{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}</Project>
+      <Name>Digiwin.ERP.FIL_INTEGRATE.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

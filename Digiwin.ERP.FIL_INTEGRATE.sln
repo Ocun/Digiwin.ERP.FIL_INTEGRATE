@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digiwin.ERP.FIL_INTEGRATE.Business", "Digiwin.ERP.FIL_INTEGRATE.Business\Digiwin.ERP.FIL_INTEGRATE.Business.csproj", "{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digiwin.ERP.FIL_INTEGRATE.Business.Implement", "Digiwin.ERP.FIL_INTEGRATE.Business.Implement\Digiwin.ERP.FIL_INTEGRATE.Business.Implement.csproj", "{6E88B9EF-454E-425A-9BA0-C2754D2C34CE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tdserver:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Digiwin.ERP.FIL_INTEGRATE.Business\\Digiwin.ERP.FIL_INTEGRATE.Business.csproj
+		SccProjectName1 = Digiwin.ERP.FIL_INTEGRATE.Business
+		SccLocalPath1 = Digiwin.ERP.FIL_INTEGRATE.Business
+		SccProjectUniqueName2 = Digiwin.ERP.FIL_INTEGRATE.Business.Implement\\Digiwin.ERP.FIL_INTEGRATE.Business.Implement.csproj
+		SccProjectName2 = Digiwin.ERP.FIL_INTEGRATE.Business.Implement
+		SccLocalPath2 = Digiwin.ERP.FIL_INTEGRATE.Business.Implement
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199D0A8A-3900-4474-9CCE-DCDD8705CFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E88B9EF-454E-425A-9BA0-C2754D2C34CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E88B9EF-454E-425A-9BA0-C2754D2C34CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E88B9EF-454E-425A-9BA0-C2754D2C34CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E88B9EF-454E-425A-9BA0-C2754D2C34CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
